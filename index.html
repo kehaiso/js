@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" 
+  content="IE=edge">
+  <meta name="viewport" 
+  content="width=device-width, initial-scale=1.0">
+
+  <title>
+    Document
+  </title>
+  <style>
+ 
+  </style>
+  
+</head>
+<body>
+  <div id="moku">
+    Valio pavyko
+
+  </div>
+  <button id="myBtn" 
+  onclick="myFunction()">spaudaliukas
+  </button>
+
+
+  <button id="KARAMBA">karamba
+  </button>
+  <div style="width:100%;">
+<iframe id="karamba1" 
+style="display: none;"
+width="200" 
+height="100" 
+src="https://www.youtube.com/embed/k7xNoaDr758" 
+title="YouTube video player" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen>
+</iframe>
+  </div>
+
+
+<script>
+
+
+
+
+
+    document.getElementById("moku").style.width = "300px";
+    document.getElementById("moku").style.height = "300px";
+    document.getElementById("moku").style.backgroundColor = "green";
+    document.getElementById("moku").style.textAlign = "center";
+    document.getElementById("moku").style.position = "relative";
+    document.getElementById("moku").style.left = "50%";
+   document.getElementById("moku").style.right = "50%";
+function myFunction() { 
+    document.getElementById("myBtn").style.display = "none";
+    document.getElementById("moku").style.display = "none";
+}
+function myFunctionOne() { 
+    document.getElementById("karamba1").style.position = "relative";
+    document.getElementById("karamba1").style.left = "50%";
+   document.getElementById("karamba1").style.right = "50%";
+    document.getElementById("karamba1").style.display = "block";
+
+
+}
+var vid = document.getElementById("karamba1");
+function playVid() { 
+  
+  vid.play(); 
+} 
+
+
+
+
+ 
+
+
+
+var btn = document.getElementById("KARAMBA");
+    btn.addEventListener("click", myFunctionOne);
+    btn.addEventListener("click", playVid);
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
